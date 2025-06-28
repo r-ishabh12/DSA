@@ -1,0 +1,8 @@
+What is Constructor?
+
+constructor is function which has a same name as aclass name
+
+What is final keyword?
+
+What is static keyword?
+
