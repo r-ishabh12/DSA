@@ -25,9 +25,24 @@ public class SearchRotatedArray {
         return index +1;
     }
 
+        public static int findMaxConsecutiveOnes(int[] nums) {
+            int len = 0;
+            int count = 0;
+            for(int i = 0; i < nums.length; i++){
+                if(nums[i] == 1){
+                    count++;
+                }else{
+                    len = Math.max(len,count);
+                    count = 0;
+                }
+            }
+            return len;
+        }
+
+
     public static void main(String[] args) {
         //to find out that how many times arrr is rotated
-        int[] arr = {4,5,6,2};
-        System.out.println(rotation(arr));
+        int[] arr = {1,1,0,1,1,1,0};
+        System.out.println(findMaxConsecutiveOnes(arr));
     }
 }

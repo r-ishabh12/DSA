@@ -11,13 +11,6 @@ public class Nto1 {
         fun(n-1);
         System.out.println(n);
     }
-    //Concept
-    static void concept(int n){
-        if (n == 0) return;
-        System.out.println(n);
-//        fun(n--);
-        concept(--n);
-    }
     static void fun1(int s, int t){
         if (s==t){   //otherwise n can also be put as 1
             System.out.println(s);
