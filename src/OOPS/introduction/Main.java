@@ -13,6 +13,8 @@ public class Main {
 //        System.out.println(rishabh.rollno);
 //        System.out.println(rishabh.name);
 //        System.out.println(rishabh.marks);
+//        ArrayList<String> ans;
+
 
         Student rishabh = new Student();
         System.out.println(rishabh.rollno);
