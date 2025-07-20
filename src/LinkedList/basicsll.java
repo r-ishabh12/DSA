@@ -29,6 +29,16 @@ public class basicsll {
             this.data = data;
         }
     }
+    public static Node reverseList(Node head) {
+        if(head == null){
+            return head;
+        }
+        while(head != null){
+            head.next = head;
+            head = head.next;
+        }
+        return head;
+    }
 
     public static void main(String[] args) {
         Node a = new Node(5);
@@ -73,7 +83,10 @@ public class basicsll {
 
         //LENGTH METHOD
 
-        System.out.println(length(a));
+//        System.out.println(length(a));
+        display(a);
+        Node reverse = reverseList(a);
+        display(a);
 
     }
 }
